@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/src/main/java/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/model/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/model/Island.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Localizaciones.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/OpenWeatherMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/model/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/model/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2a2I9f9dOQm8KEkNYsQpfqu621q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/karel/IdeaProjects/Practice2_Publisher/PredictionProvider/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider\src\main\resources" />
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher" />
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider\src\main\java\control" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="EventStoreBuilder" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="control.Main" />
+      <module name="Practice1_WeatherForecast" />
+      <option name="PROGRAM_PARAMETERS" value="7e0f4c4d53a6bfba9639af3dd517f866" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="control.Publisher" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="" />
+      <created>1703510101850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703510101850</updated>
+    </task>
+    <servers />
+  </component>
+</project>
