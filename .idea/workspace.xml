@@ -4,32 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/src/main/java/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EventStoreBuilder/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/model/Island.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Localizaciones.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/OpenWeatherMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/Publisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/model/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/model/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PredictionProvider/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="Provider of hotels added with its interface.">
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Islas.csv.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStoreBuilder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStoreBuilder/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStoreBuilder/src/main/java/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventStoreBuilder/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,16 +54,39 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="control" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider\src\main\resources" />
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher" />
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider\src\main\java\control" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher" />
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\src" />
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider" />
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\HotelProvider" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="EventStoreBuilder" />
+      <module name="DatalakeBuilder" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="control.Main" />
+      <module name="HotelProvider" />
+      <option name="PROGRAM_PARAMETERS" value="41d89dc602c4c382d826a54ad4b99c7f9dbc7f30100e9b5a85437edb2a6fb14d" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,8 +105,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="control.Main" />
+      <module name="Practice1_WeatherForecast" />
+      <option name="PROGRAM_PARAMETERS" value="7e0f4c4d53a6bfba9639af3dd517f866" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -112,6 +142,24 @@
       <option name="presentableId" value="Default" />
       <updated>1703510101850</updated>
     </task>
+    <task id="LOCAL-00001" summary="Provider of hotels added with its interface.">
+      <option name="closed" value="true" />
+      <created>1703950338890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703950338890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Provider of hotels added with its interface." />
+    <option name="LAST_COMMIT_MESSAGE" value="Provider of hotels added with its interface." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Practice2_Publisher$Main.ic" NAME="Main Coverage Results" MODIFIED="1703954859576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>control.*</FILTER>
+    </SUITE>
   </component>
 </project>

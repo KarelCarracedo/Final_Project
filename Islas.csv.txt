@@ -1,0 +1,8 @@
+Tenerife,SantaCruzDeTenerife,
+GranCanaria,LasPalmasDeGranCanaria,
+Lanzarote,Arrecife,
+Fuerteventura,PuertoDelRosario,
+LaPalma,SantaCruzDeLaPalma,
+LaGomera,SanSebastianDeLaGomera,
+ElHierro,Valverde,
+LaGraciosa,CaletaDeSebo
