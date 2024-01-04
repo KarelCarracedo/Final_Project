@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="Control class and publisher implemented in module HotelProvider.">
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/HotelConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/InstantSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelProvider/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/HotelPublisher.java" afterDir="false" />
+    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="DatalakeBuilder implemented and fixed errors.">
       <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/model/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Islas.csv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Islas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/OpenWeatherMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/OpenWeatherMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,13 +136,22 @@
       <option name="project" value="LOCAL" />
       <updated>1704016820251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DatalakeBuilder implemented and fixed errors.">
+      <option name="closed" value="true" />
+      <created>1704382566426</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704382566426</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Provider of hotels added with its interface." />
     <MESSAGE value="Control class and publisher implemented in module HotelProvider." />
-    <option name="LAST_COMMIT_MESSAGE" value="Control class and publisher implemented in module HotelProvider." />
+    <MESSAGE value="DatalakeBuilder implemented and fixed errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="DatalakeBuilder implemented and fixed errors." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practice2_Publisher$Main.ic" NAME="Main Coverage Results" MODIFIED="1703954859576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

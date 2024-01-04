@@ -47,7 +47,6 @@ public class SerpHotel implements HotelProvider{
             for (JsonElement hotelElement : hotels) {
                 JsonObject hotelInfo = hotelElement.getAsJsonObject();
                 String name = hotelInfo.get("name").getAsString();
-                //TODO Cambiar los valores por defecto de Int a String con valor NA
                 String ratePerNight = "NULL";
                 if (hotelInfo.getAsJsonObject().has("rate_per_night")) {
                     ratePerNight = hotelInfo.getAsJsonObject("rate_per_night").get("extracted_lowest").getAsString();

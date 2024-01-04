@@ -17,7 +17,6 @@ public class WeatherReceiver {
     private String path;
     public WeatherReceiver(String path) { this.path = path; }
     public void gsonReceiver() throws JMSException {
-        //TODO Encapsular con mi propia excepción
         Gson gson = new Gson();
         String url = ActiveMQConnection.DEFAULT_BROKER_URL;
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
