@@ -24,15 +24,14 @@ public class SerpHotel implements HotelProvider{
     private final String ss = "SerpApi";
     public SerpHotel(String apiKey) { this.apiKey = apiKey; }
     @Override
-    public List<Hotel> get(Island island) {
+    public List<Hotel> getHotels(Island island) {
         Date tomorrow = getTomorrowDate();
         Date fiveDaysAhead = getFutureDate(tomorrow, 5);
         String checkIn = formatDate(tomorrow);
         String checkOut = formatDate(fiveDaysAhead);
-        String baseUrl = "https://serpapi.com/search.html?engine=google_hotels&q=" +
+        String baseUrl = "https://serpapi.com/search.json?engine=google_hotels&q=" +
                 island.getCapitalCity() + "&gl=es&hl=es&currency=EUR&check_in_date=" +
                 checkIn + "&check_out_date=" + checkOut + "&api_key=" + apiKey;
-
         List<Hotel> hotelList = new ArrayList<>();
 
         try {
@@ -48,10 +47,23 @@ public class SerpHotel implements HotelProvider{
             for (JsonElement hotelElement : hotels) {
                 JsonObject hotelInfo = hotelElement.getAsJsonObject();
                 String name = hotelInfo.get("name").getAsString();
-                int ratePerNight = hotelInfo.getAsJsonObject("rate_per_night").get("extracted_lowest").getAsInt();
-                int totalRate = hotelInfo.getAsJsonObject("total_rate").get("extracted_lowest").getAsInt();
-                int hotelClass = hotelInfo.get("extracted_hotel_class").getAsInt();
-                double overallRating = hotelInfo.get("overall_rating").getAsDouble();
+                //TODO Cambiar los valores por defecto de Int a String con valor NA
+                String ratePerNight = "NULL";
+                if (hotelInfo.getAsJsonObject().has("rate_per_night")) {
+                    ratePerNight = hotelInfo.getAsJsonObject("rate_per_night").get("extracted_lowest").getAsString();
+                }
+                String totalRate = "NULL";
+                if (hotelInfo.getAsJsonObject().has("total_rate")) {
+                    totalRate = hotelInfo.getAsJsonObject("total_rate").get("extracted_lowest").getAsString();
+                }
+                String hotelClass = "NULL";
+                if (hotelInfo.getAsJsonObject().has("extracted_hotel_class")) {
+                    hotelClass = hotelInfo.get("extracted_hotel_class").getAsString();
+                }
+                String overallRating = "NULL";
+                if (hotelInfo.getAsJsonObject().has("overall_rating")) {
+                    overallRating = hotelInfo.get("overall_rating").getAsString();
+                }
                 Hotel hotel = new Hotel(name, ratePerNight, totalRate, hotelClass, overallRating, island, checkIn, checkOut,getSs());
                 hotelList.add(hotel);
             }

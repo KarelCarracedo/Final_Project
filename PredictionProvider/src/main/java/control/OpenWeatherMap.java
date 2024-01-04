@@ -23,13 +23,14 @@ import java.util.List;
 
 public class OpenWeatherMap implements WeatherProvider {
     private final String apiKey;
+    private final String ss = "OpenWeatherMap";
     public OpenWeatherMap(String apiKey) {
         this.apiKey = apiKey;
     }
     @Override
     public List<Weather> get(Location location) {
         String baseUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" +
-                location.getLatitude() + "&lon=" + location.getLongitude() + "&appid=" + apiKey;
+                location.getLatitude() + "&lon=" + location.getLongitude() + "&units=metric" + "&appid=" + apiKey;
 
         List<Weather> noonWeatherList = new ArrayList<>();
 
@@ -59,10 +60,9 @@ public class OpenWeatherMap implements WeatherProvider {
                     int precipitationProbability = forecast.getAsJsonArray("weather")
                             .get(0).getAsJsonObject().get("id").getAsInt();
                     String ts = DateTimeFormatter.ISO_INSTANT.format(Instant.now());
-                    String ss = "prediction-provider";
                     String predictionInstant = DateTimeFormatter.ISO_INSTANT.format(instant);
 
-                    Weather weather = new Weather(temperature, humidity, clouds, windSpeed, precipitationProbability, location, ts, ss, predictionInstant);
+                    Weather weather = new Weather(temperature, humidity, clouds, windSpeed, precipitationProbability, location, ts, getSs(), predictionInstant);
                     noonWeatherList.add(weather);
                 }
             }
@@ -70,5 +70,9 @@ public class OpenWeatherMap implements WeatherProvider {
             throw new RuntimeException(e);
         }
         return noonWeatherList;
+    }
+
+    public String getSs() {
+        return ss;
     }
 }

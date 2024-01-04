@@ -27,7 +27,7 @@ public class HotelControl {
         Runnable hotelTask = () -> {
             List<Island> islands = readIslandsFromCSV("Islas.csv");
             for (Island island : islands) {
-                List<Hotel> hotels = getHotelProvider().get(island);
+                List<Hotel> hotels = getHotelProvider().getHotels(island);
                 for (Hotel hotel : hotels) {
                     try {
                         hotelPublisher.hotelPublish(hotel);
@@ -37,7 +37,7 @@ public class HotelControl {
                 }
             }
         };
-        scheduler.scheduleAtFixedRate(hotelTask, 0, 6, TimeUnit.HOURS);
+        scheduler.scheduleAtFixedRate(hotelTask, 0, 72, TimeUnit.HOURS);
     }
 
     private static List<Island> readIslandsFromCSV(String csvFile) {

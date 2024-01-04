@@ -1,3 +1,5 @@
+package control;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.apache.activemq.ActiveMQConnection;
@@ -11,27 +13,30 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Receiver {
+public class WeatherReceiver {
+    private String path;
+    public WeatherReceiver(String path) { this.path = path; }
     public void gsonReceiver() throws JMSException {
+        //TODO Encapsular con mi propia excepción
         Gson gson = new Gson();
         String url = ActiveMQConnection.DEFAULT_BROKER_URL;
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         Connection connection = connectionFactory.createConnection();
-        connection.setClientID("Luis");
+        connection.setClientID("client1");
         connection.start();
 
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
         Topic destination = session.createTopic("prediction.Weather");
 
-        MessageConsumer consumer = session.createDurableSubscriber(destination, "Luis");
+        MessageConsumer consumer = session.createDurableSubscriber(destination, "client1");
 
         try {
-            String baseDirectory = "eventstore/prediction.Weather";
+            String baseDirectory = getPath() + "datalake/eventstore/prediction.Weather";
 
             File baseDir = new File(baseDirectory);
             if (!baseDir.exists() && !baseDir.mkdirs()) {
-                throw new RuntimeException("No se pudo crear el directorio base: " + baseDirectory);
+                throw new RuntimeException("Base directory not found: " + baseDirectory);
             }
 
             consumer.setMessageListener(message -> {
@@ -56,7 +61,7 @@ public class Receiver {
                     try (FileWriter fileWriter = new FileWriter(fileName, true);
                          BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
                         bufferedWriter.write(jsonObject.toString());
-                        bufferedWriter.newLine(); // Agregar un salto de línea entre eventos
+                        bufferedWriter.newLine();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -74,5 +79,9 @@ public class Receiver {
         } finally {
             connection.close();
         }
+    }
+
+    public String getPath() {
+        return path;
     }
 }

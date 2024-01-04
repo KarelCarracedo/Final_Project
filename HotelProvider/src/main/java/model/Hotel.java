@@ -4,16 +4,16 @@ import java.time.Instant;
 
 public class Hotel {
     private String name;
-    private int ratePerNight;
-    private int totalRate;
-    private int hotelClass;
-    private double overallRating;
+    private String ratePerNight;
+    private String totalRate;
+    private String hotelClass;
+    private String overallRating;
     private Island island;
     private String checkIn;
     private String checkOut;
     private Instant ts = Instant.now();
     private String ss;
-    public Hotel(String name, int ratePerNight, int totalRate, int hotelClass, double overallRating, Island island, String checkIn, String checkOut,String ss) {
+    public Hotel(String name, String ratePerNight, String totalRate, String hotelClass, String overallRating, Island island, String checkIn, String checkOut,String ss) {
         this.name = name;
         this.ratePerNight = ratePerNight;
         this.totalRate = totalRate;
@@ -29,19 +29,19 @@ public class Hotel {
         return name;
     }
 
-    public int getRatePerNight() {
+    public String getRatePerNight() {
         return ratePerNight;
     }
 
-    public int getTotalRate() {
+    public String getTotalRate() {
         return totalRate;
     }
 
-    public int getHotelClass() {
+    public String getHotelClass() {
         return hotelClass;
     }
 
-    public double getOverallRating() {
+    public String getOverallRating() {
         return overallRating;
     }
 

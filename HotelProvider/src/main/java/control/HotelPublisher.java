@@ -1,10 +1,12 @@
 package control;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import model.Hotel;
 import javax.jms.*;
+import java.time.Instant;
 
 public class HotelPublisher {
     public void hotelPublish(Hotel hotel) throws MyException {
@@ -22,7 +24,9 @@ public class HotelPublisher {
 
             MessageProducer producer = session.createProducer(destination);
 
-            Gson gson = new Gson();
+            Gson gson = new GsonBuilder()
+                    .registerTypeAdapter(Instant.class, new InstantSerializer())
+                    .create();
             TextMessage message = session
                     .createTextMessage(gson.toJson(hotel));
 
