@@ -27,7 +27,6 @@ public class HotelConsumer {
                 String jsonText = null;
                 try {
                     jsonText = ((TextMessage) message).getText();
-                    System.out.println(jsonText); //TODO Borrar
                     insertHotelData(connectiondb, jsonText);
                 } catch (JMSException e) {
                     throw new RuntimeException(e);

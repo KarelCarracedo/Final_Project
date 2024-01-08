@@ -27,7 +27,6 @@ public class WeatherConsumer {
                 String jsonText = null;
                 try {
                     jsonText = ((TextMessage) message).getText();
-                    System.out.println(jsonText); //TODO Borrar
                     insertWeatherData(connectiondb, jsonText);
                 } catch (JMSException e) {
                     throw new RuntimeException(e);
