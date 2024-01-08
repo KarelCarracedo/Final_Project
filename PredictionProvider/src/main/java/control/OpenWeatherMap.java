@@ -30,7 +30,7 @@ public class OpenWeatherMap implements WeatherProvider {
     @Override
     public List<Weather> get(Location location) {
         String baseUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" +
-                location.getLatitude() + "&lon=" + location.getLongitude() + "&units=metric" + "&appid=" + apiKey;
+                location.getLatitude() + "&lon=" + location.getLongitude() + "&units=metric&appid=" + apiKey;
 
         List<Weather> noonWeatherList = new ArrayList<>();
 
@@ -57,8 +57,7 @@ public class OpenWeatherMap implements WeatherProvider {
                     int humidity = forecast.getAsJsonObject("main").get("humidity").getAsInt();
                     int clouds = forecast.getAsJsonObject("clouds").get("all").getAsInt();
                     double windSpeed = forecast.getAsJsonObject("wind").get("speed").getAsDouble();
-                    int precipitationProbability = forecast.getAsJsonArray("weather")
-                            .get(0).getAsJsonObject().get("id").getAsInt();
+                    double precipitationProbability = forecast.get("pop").getAsDouble();
                     String ts = DateTimeFormatter.ISO_INSTANT.format(Instant.now());
                     String predictionInstant = DateTimeFormatter.ISO_INSTANT.format(instant);
 

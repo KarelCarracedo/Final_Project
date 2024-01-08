@@ -5,12 +5,12 @@ public class Weather {
     private int humidity;
     private int clouds;
     private double windSpeed;
-    private int precipitationProbability;
+    private double precipitationProbability;
     private Location location;
     private String ts;
     private String ss;
     private String predictionTime;
-    public Weather(double temperature, int humidity, int clouds, double windSpeed, int precipitationProbability, Location location,
+    public Weather(double temperature, int humidity, int clouds, double windSpeed, double precipitationProbability, Location location,
                    String ts, String ss, String predictionTime) {
         this.temperature = temperature;
         this.humidity = humidity;
@@ -37,7 +37,7 @@ public class Weather {
 
     public double getWindSpeed() { return windSpeed; }
 
-    public int getPrecipitationProbability() {
+    public double getPrecipitationProbability() {
         return precipitationProbability;
     }
 
