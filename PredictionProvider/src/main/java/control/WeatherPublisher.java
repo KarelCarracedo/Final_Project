@@ -6,7 +6,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import model.Weather;
 import javax.jms.*;
 
-public class Publisher {
+public class WeatherPublisher {
     public void weatherPublish(Weather weather) throws MyException {
         String url = ActiveMQConnection.DEFAULT_BROKER_URL;
         String subject = "prediction.Weather";

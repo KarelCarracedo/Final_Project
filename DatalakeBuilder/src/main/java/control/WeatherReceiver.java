@@ -69,12 +69,6 @@ public class WeatherReceiver {
                     throw new RuntimeException(e);
                 }
             });
-
-            System.out.println("Presiona Enter para salir.");
-            System.in.read();
-
-        } catch (IOException e) {
-            e.printStackTrace();
         } finally {
             connection.close();
         }

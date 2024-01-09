@@ -4,17 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="DatalakeBuilder implemented and fixed errors.">
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/BusinessControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DatalakeCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/HotelConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/WeatherConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/resources/log4j.properties" afterDir="false" />
+    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="BusinessUnit and datamart implemented and fixed errors in PredictionProvider.">
+      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DbManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Viewmodel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/model/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/model/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classDiagram/BusinessUnit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classDiagram/DatalakeBuilder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classDiagram/HotelProvider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classDiagram/PredictionProvider.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/OpenWeatherMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/OpenWeatherMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/model/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/BusinessControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/BusinessControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DatalakeCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DatalakeCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/WeatherConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/WeatherConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Islas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Islas.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Localizaciones.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Localizaciones.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -64,13 +78,14 @@
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider\src\main\java\control" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\diagramClass" />
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher" />
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\src" />
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\PredictionProvider" />
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\HotelProvider" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BusinessUnit">
+  <component name="RunManager" selected="Application.DatalakeBuilder">
     <configuration name="BusinessUnit" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="control.Main" />
       <module name="BuisnessUnit" />
@@ -113,7 +128,7 @@
       <option name="PROGRAM_PARAMETERS" value="7e0f4c4d53a6bfba9639af3dd517f866" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="control.Publisher" />
+          <option name="PATTERN" value="control.WeatherPublisher" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,9 +144,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PredictionProvider" />
         <item itemvalue="Application.DatalakeBuilder" />
         <item itemvalue="Application.HotelProvider" />
-        <item itemvalue="Application.PredictionProvider" />
         <item itemvalue="Application.PredictionProvider" />
       </list>
     </recent_temporary>
@@ -177,14 +192,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704382942471</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BusinessUnit and datamart implemented and fixed errors in PredictionProvider.">
+      <option name="closed" value="true" />
+      <created>1704751742047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704751742047</updated>
+    </task>
+    <task id="LOCAL-00006" summary="BusinessUnit and datamart implemented and fixed errors in PredictionProvider.">
+      <option name="closed" value="true" />
+      <created>1704751809933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704751809933</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Provider of hotels added with its interface." />
     <MESSAGE value="Control class and publisher implemented in module HotelProvider." />
     <MESSAGE value="DatalakeBuilder implemented and fixed errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="DatalakeBuilder implemented and fixed errors." />
+    <MESSAGE value="BusinessUnit and datamart implemented and fixed errors in PredictionProvider." />
+    <option name="LAST_COMMIT_MESSAGE" value="BusinessUnit and datamart implemented and fixed errors in PredictionProvider." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practice2_Publisher$Main.ic" NAME="Main Coverage Results" MODIFIED="1703954859576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

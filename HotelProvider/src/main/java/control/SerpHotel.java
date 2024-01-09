@@ -30,7 +30,7 @@ public class SerpHotel implements HotelProvider{
         String checkIn = formatDate(tomorrow);
         String checkOut = formatDate(fiveDaysAhead);
         String baseUrl = "https://serpapi.com/search.json?engine=google_hotels&q=" +
-                island.getCapitalCity() + "&gl=es&hl=es&currency=EUR&check_in_date=" +
+                island.getCapitalCity().replace(" ", "+") + "&gl=es&hl=es&currency=EUR&check_in_date=" +
                 checkIn + "&check_out_date=" + checkOut + "&api_key=" + apiKey;
         List<Hotel> hotelList = new ArrayList<>();
 

@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 
 public class WeatherControl {
     private WeatherProvider weatherProvider;
-    private Publisher publisher;
+    private WeatherPublisher weatherPublisher;
     private String apiKey;
     public WeatherControl(String apiKey) {
         this.weatherProvider = new OpenWeatherMap(apiKey);
-        this.publisher = new Publisher();
+        this.weatherPublisher = new WeatherPublisher();
     }
 
     public void fetchAndSaveWeather() {
@@ -29,7 +29,7 @@ public class WeatherControl {
                 List<Weather> weathers = getWeatherProvider().get(location);
                 for (Weather weather : weathers) {
                     try {
-                        publisher.weatherPublish(weather);
+                        weatherPublisher.weatherPublish(weather);
                     } catch (MyException e) {
                         System.out.println("Error");
                     }
@@ -72,7 +72,7 @@ public class WeatherControl {
         return weatherProvider;
     }
 
-    public Publisher getPublisher() {
-        return publisher;
+    public WeatherPublisher getWeatherPublisher() {
+        return weatherPublisher;
     }
 }

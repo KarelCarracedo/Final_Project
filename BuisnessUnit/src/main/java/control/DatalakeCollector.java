@@ -43,7 +43,6 @@ public class DatalakeCollector {
             for (File eventFile : eventFiles) {
                 try {
                     JsonObject jsonObject = readJsonFromFile(eventFile);
-                    System.out.println(jsonObject);
 
                     try (Connection dbConnection = connection()) {
                         createWeatherTable(dbConnection);
@@ -72,7 +71,6 @@ public class DatalakeCollector {
             for (File eventFile : eventFiles) {
                 try {
                     JsonObject jsonObject = readJsonFromFile(eventFile);
-                    System.out.println(jsonObject);
 
                     try (Connection dbConnection = connection()) {
                         createHotelTable(dbConnection);
@@ -91,7 +89,7 @@ public class DatalakeCollector {
         try (FileReader fileReader = new FileReader(file);
              JsonReader jsonReader = new JsonReader(fileReader)) {
 
-            jsonReader.setLenient(true);  // Configurando para ser indulgente con JSON malformado
+            jsonReader.setLenient(true);
             Gson gson = new Gson();
             return gson.fromJson(jsonReader, JsonObject.class);
         }
@@ -112,7 +110,7 @@ public class DatalakeCollector {
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "temperature REAL," +
                 "windSpeed REAL," +
-                "precipitationProbability INTEGER," +
+                "precipitationProbability REAL," +
                 "location TEXT," +
                 "predictionTime TEXT)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(createTableSQL)) {
@@ -131,7 +129,7 @@ public class DatalakeCollector {
             JsonObject jsonObject = gson.fromJson(jsonText, JsonObject.class);
             preparedStatement.setDouble(1, jsonObject.get("temperature").getAsDouble());
             preparedStatement.setDouble(2, jsonObject.get("windSpeed").getAsDouble());
-            preparedStatement.setInt(3, jsonObject.get("precipitationProbability").getAsInt());
+            preparedStatement.setDouble(3, jsonObject.get("precipitationProbability").getAsDouble());
             preparedStatement.setString(4, jsonObject.getAsJsonObject("location").get("locationName").getAsString());
             preparedStatement.setString(5, jsonObject.get("predictionTime").getAsString());
             preparedStatement.executeUpdate();
