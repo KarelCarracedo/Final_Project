@@ -40,10 +40,8 @@ public class HotelReceiver {
             consumer.setMessageListener(message -> {
                 try {
                     String jsonText = ((TextMessage) message).getText();
-                    System.out.println(jsonText);
 
                     JsonObject jsonObject = gson.fromJson(jsonText, JsonObject.class);
-                    System.out.println(jsonObject);
 
                     String ssValue = jsonObject.get("ss").getAsString();
                     String currentDate = new SimpleDateFormat("yyyyMMdd").format(new Date());

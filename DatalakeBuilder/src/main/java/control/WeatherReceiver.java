@@ -41,7 +41,6 @@ public class WeatherReceiver {
             consumer.setMessageListener(message -> {
                 try {
                     String jsonText = ((TextMessage) message).getText();
-                    System.out.println(jsonText);
 
                     JsonObject jsonObject = gson.fromJson(jsonText, JsonObject.class);
 

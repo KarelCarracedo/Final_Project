@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="BusinessUnit and datamart implemented and fixed errors in PredictionProvider.">
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DbManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Viewmodel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/model/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/model/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classDiagram/BusinessUnit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classDiagram/DatalakeBuilder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classDiagram/HotelProvider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classDiagram/PredictionProvider.png" afterDir="false" />
+    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="CLI implemented, fixed errors and README added.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/BusinessControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/BusinessControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DatalakeCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/DatalakeCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/WeatherConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/WeatherConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuisnessUnit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Viewmodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Viewmodel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/src/main/java/control/SerpHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Islas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Islas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Localizaciones.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Localizaciones.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/src/main/java/control/WeatherControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelProvider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PredictionProvider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +49,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/karel/IdeaProjects/Practice2_Publisher&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/karel/IdeaProjects/Final_Project&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -85,7 +74,7 @@
       <recent name="C:\Users\karel\IdeaProjects\Practice2_Publisher\HotelProvider" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatalakeBuilder">
+  <component name="RunManager" selected="Application.BusinessUnit">
     <configuration name="BusinessUnit" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="control.Main" />
       <module name="BuisnessUnit" />
@@ -144,9 +133,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PredictionProvider" />
         <item itemvalue="Application.DatalakeBuilder" />
         <item itemvalue="Application.HotelProvider" />
+        <item itemvalue="Application.PredictionProvider" />
         <item itemvalue="Application.PredictionProvider" />
       </list>
     </recent_temporary>
@@ -208,15 +197,35 @@
       <option name="project" value="LOCAL" />
       <updated>1704751809933</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="CLI implemented, fixed errors and README added.">
+      <option name="closed" value="true" />
+      <created>1704837594765</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704837594765</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Provider of hotels added with its interface." />
     <MESSAGE value="Control class and publisher implemented in module HotelProvider." />
     <MESSAGE value="DatalakeBuilder implemented and fixed errors." />
     <MESSAGE value="BusinessUnit and datamart implemented and fixed errors in PredictionProvider." />
-    <option name="LAST_COMMIT_MESSAGE" value="BusinessUnit and datamart implemented and fixed errors in PredictionProvider." />
+    <MESSAGE value="CLI implemented, fixed errors and README added." />
+    <option name="LAST_COMMIT_MESSAGE" value="CLI implemented, fixed errors and README added." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practice2_Publisher$Main.ic" NAME="Main Coverage Results" MODIFIED="1703954859576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
