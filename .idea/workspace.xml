@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="CLI implemented, fixed errors and README added.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Viewmodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/BuisnessUnit/src/main/java/control/Viewmodel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/HotelReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/DatalakeBuilder/src/main/java/control/WeatherReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelProvider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HotelProvider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PredictionProvider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PredictionProvider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="64efac18-78c4-4e06-b7c0-0c173adb0e54" name="Changes" comment="Fixed errors." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704837594765</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed errors.">
+      <option name="closed" value="true" />
+      <created>1704841544685</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704841544686</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,7 +222,8 @@
     <MESSAGE value="DatalakeBuilder implemented and fixed errors." />
     <MESSAGE value="BusinessUnit and datamart implemented and fixed errors in PredictionProvider." />
     <MESSAGE value="CLI implemented, fixed errors and README added." />
-    <option name="LAST_COMMIT_MESSAGE" value="CLI implemented, fixed errors and README added." />
+    <MESSAGE value="Fixed errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Practice2_Publisher$Main.ic" NAME="Main Coverage Results" MODIFIED="1703954859576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
